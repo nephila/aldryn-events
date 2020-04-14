@@ -362,7 +362,7 @@ class EventListPlugin(BaseEventPlugin):
         # we can not use oldinstance.events or we get a error like:
         # DatabaseError:
         #   no such column: aldryn_events_eventlistplugin_events.sort_value
-        self.events = Event.objects.filter(eventlistplugin__pk=oldinstance.pk)
+        self.events.set(Event.objects.filter(eventlistplugin__pk=oldinstance.pk))
 
 
 @python_2_unicode_compatible

@@ -17,7 +17,6 @@ gettext = noop_gettext
 HELPER_SETTINGS = {
     'TIME_ZONE': 'UTC',
     'INSTALLED_APPS': [
-        'aldryn_apphook_reload',  # for tests
         'aldryn_apphooks_config',
         'aldryn_common',
         'aldryn_translation_tools',
